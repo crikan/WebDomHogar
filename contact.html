@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DomoHogar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="row">
+        <div class="col-12">
+            <header>
+                <img src="img/header.jpg" alt="cabecera domohogar" class="img-fluid mx-auto d-block">
+            </header>
+        </div>
+    </div>
+    <!--nav bar-->
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-sm justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="catalog.html">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--form-->
+    <div class="row">
+        <div class="col-8 mx-auto animated fadeInUp">
+            <article>
+                <h1 class="display-4 text-center animated fadeIn">Fill this form and we will contact you</h1>
+                <br>
+                <form action="send.php" method="POST" class="was-validated">
+                    <div class="form-group">
+                        <h4 class="center-text">enter your contact information</h4>
+                        <!--name&surname-->
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name and surname"
+                            name="name" required>
+                        <div class="valid-feedback">valid</div>
+                        <div class="invalid-feedback">mandatory field</div>
+                        <!--email-->
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email adress"
+                                required>
+                            <div class="input-group-append">
+                                <span class="input-group-text">@example.com</span>
+                            </div>
+                            <div class="valid-feedback">valid</div>
+                            <div class="invalid-feedback">mandatory field</div>
+                        </div>
+                        <!--phone#-->
+                        <div class="input-group">
+                            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{9}" placeholder="Enter phone number"
+                                required>
+                            <div class="input-group-append">
+                                <span class="input-group-text">123456789</span>
+                            </div>
+                            <div class="valid-feedback">valid</div>
+                            <div class="invalid-feedback">mandatory field</div>
+                        </div>
+                        <br>
+                        <!--services-->
+                        <div class="form-group center-text">
+                            <h4 class="center-text">choose the services you are interested in</h4>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="decoWifi" value="ok">DecoWifi Pack
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="wifiSignal" value="ok">Wifi Signal Expansion
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="smartPlugs" value="ok">Smart Plugs Pack
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="smartBulbs" value="ok">Smart Bulbs Pack
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="wifiCams" value="ok">Wifi Surveillance Cameras
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group center-text">
+                            <button type="submit" class="btn-lg">Submit</button>
+                            <button type="reset" class="btn-lg">Reset</button>
+                        </div>
+                </form>
+            </article>
+            </div>
+        </div>
+
+</body>
+
+</html>

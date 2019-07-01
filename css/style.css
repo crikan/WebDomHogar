@@ -1,0 +1,61 @@
+header{
+    background-color:#c7c7c7
+}
+
+nav.navbar {
+    background-color:#009de9;
+
+}
+article{
+    padding: 20px;
+    margin: 10px;
+    margin-right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:#cae9ff ;    
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+article2{
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    background-color:#cae9ff ;    
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    background-color:#009de9;
+    margin: 10px; 
+    margin-left: 0px;   
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+.carousel-caption{
+    position:sticky
+}
+.card-deck{
+    margin-top: 20px
+}
+.center-block{
+    float: none;
+    margin: auto;    
+}
+.center-text{
+    text-align: center
+}
+.btn-lg{
+    background-color:#009de9;
+    color: #ffffff;    
+}
