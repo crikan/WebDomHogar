@@ -40,16 +40,16 @@
             </nav>
         </div>
     </div>
-    <!--form-->
+    <!--formulario-->
     <div class="row">
         <div class="col-8 mx-auto animated fadeInUp">
             <article>
                 <h1 class="display-4 text-center animated fadeIn">Fill this form and we will contact you</h1>
                 <br>
-                <form action="send.php" method="POST" class="was-validated">
+                <form action="scripts/send.php" method="POST" class="was-validated">
                     <div class="form-group">
                         <h4 class="center-text">enter your contact information</h4>
-                        <!--name&surname-->
+                        <!--nombre y apellidos-->
                         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name and surname"
                             name="name" required>
                         <div class="valid-feedback">valid</div>
@@ -64,7 +64,7 @@
                             <div class="valid-feedback">valid</div>
                             <div class="invalid-feedback">mandatory field</div>
                         </div>
-                        <!--phone#-->
+                        <!--nº de teléfono-->
                         <div class="input-group">
                             <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{9}" placeholder="Enter phone number"
                                 required>
@@ -75,7 +75,7 @@
                             <div class="invalid-feedback">mandatory field</div>
                         </div>
                         <br>
-                        <!--services-->
+                        <!--checkboxes para cada servicio-->
                         <div class="form-group center-text">
                             <h4 class="center-text">choose the services you are interested in</h4>
                             <div class="form-check-inline">
@@ -105,6 +105,7 @@
                             </div>
                         </div>
                         <br>
+                        <!--botones de enviar o resetear-->
                         <div class="form-group center-text">
                             <button type="submit" class="btn-lg">Submit</button>
                             <button type="reset" class="btn-lg">Reset</button>

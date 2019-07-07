@@ -43,7 +43,8 @@ article2{
     -webkit-border-radius: 20px 20px 20px 20px;
 }
 .carousel-caption{
-    position:sticky
+    position: sticky;
+    
 }
 .card-deck{
     margin-top: 20px

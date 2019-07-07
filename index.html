@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--PAGINA DE INICIO-->
+<!--en el head es donde se encuentran los enlaces a las librerías a utilizar, junto a las hojas de estiloy scripts de JS y JQ-->
 
 <head>
     <title>DomoHogar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+<!--cuerpo de la web-->
 
 <body>
-    <!--header-->
+    <!--Cabecera con imagen de tipo banner. La colocación de los elementos se realiza mediante clases del grid de bootstrap-->
     <div class="row">
         <div class="col-12">
             <header>
@@ -22,7 +25,7 @@
             </header>
         </div>
     </div>
-    <!--nav bar-->
+    <!--barra de navegación con tres opciones que nos redirigen  a las demás páginas de la webr-->
     <div class="row">
         <div class="col-12">
             <nav class="navbar navbar-expand-sm justify-content-center">
@@ -42,10 +45,11 @@
     </div>
 
     <div class="row">
-        <!--article-->
+        <!--artículo de la izquierda-->
         <div class="col-6 animated fadeInUp">
             <article>
-                <img src="img/logo.png" alt="logo" class="mx-auto d-block">
+
+                <img class="img-responsive mx-auto d-block" src="img/logo.png" alt="logo">
                 <h1 class="display-4 text-center"> DomoHogar</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur,
                     perspiciatis fugiat qui alias ad libero quisquam consequatur.
@@ -58,10 +62,11 @@
                     voluptas quidem? Molestias.</p>
             </article>
         </div>
-        <!--slider-->
+        <!--artículo de la derecha formado por un carrusel de imágenes-->
         <div class="col-6 animated fadeInUp">
             <div id="slider" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
+
+                <!-- Indicadores de la parte inferior de las imágenes -->
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
@@ -69,7 +74,7 @@
                     <li data-target="#demo" data-slide-to="3"></li>
                 </ul>
 
-                <!-- The slideshow -->
+                <!--Wrapper para cada slide incluyendo imagen y textos -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/1.jpg" alt="energy">
@@ -101,7 +106,8 @@
                     </div>
                 </div>
 
-                <!-- Left and right controls -->
+
+                <!-- controles laterales manuales para pasar de una imágen a otra -->
                 <a class="carousel-control-prev" href="#slider" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
